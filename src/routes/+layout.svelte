@@ -1,3 +1,8 @@
+<!-- importing styles from app.css here instead of directly in app.html -->
+<script>
+    import '../app.css'
+</script>
+
 <nav>
     <a class="top-panel-right" href="/">Profile</a>
     <a class="top-panel-right" href="/projects">Projects</a>
