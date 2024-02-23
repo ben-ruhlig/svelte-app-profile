@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    export let data;
+</script>
+
+<style>
+
+</style>
+
+<h1>Hey, I'm {data.first_name} {data.last_name}</h1>
+<p>I'm a finance professional that's has since pursued my passion to learn computer science and build things.</p>

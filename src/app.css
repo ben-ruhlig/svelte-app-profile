@@ -2,22 +2,14 @@
     --color-pallete-dark-blue: #3D405B;
     --color-pallete-very-light-tan: #F4F1DE;
     --color-pallete-dark-mustard: #F2CC8F;
-}
-
-nav {
-    display: flex;
-    background-color: var(--color-pallete-dark-blue);
-    color: var(--color-pallete-very-light-tan);
-    margin: 0 0 1em 0;
-    padding: 1em;
-    flex: 1;
-    gap: 1em; 
-}
-
-nav a {
-    color: var(--color-pallete-very-light-tan);
+    --font-size-normal: 16px;
+    --font-size-huge: 42px;
 }
 
 body {
-    background-color: var(--color-pallete-very-light-tan);
+    margin: 0;
+    padding: 0;
+    font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    display: flex;
+    flex-direction: column;
 }
