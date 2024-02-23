@@ -49,17 +49,6 @@
     #right-external {
         margin-left: 80px;
     }
-    #body-content {
-        display: flex;
-        flex-direction: column;
-        width: var(--page-content-width);
-        padding: 10px 40px;
-    }
-    #body-outline {
-        display: flex;
-        justify-content: center;
-        height: 100%;
-    }
 </style>
 
 <div id=outside>
@@ -92,17 +81,7 @@
         </nav>
     </header>
 
-    <!-- Middle content section of the website -->
-    <div id=body-outline>
-        <div id=body-content>
-            <div id=profile-picture>
-                <p>This is where the profile picture belongs</p>
-            </div>
-            <div id=portfolio-highlights>
-                <slot />
-            </div>
-        </div>
-    </div>
+    <slot />
 
     <!-- Bottom pane of the website -->
     <footer>
