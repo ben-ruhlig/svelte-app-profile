@@ -48,6 +48,8 @@
     }
     #right-external {
         margin-left: 80px;
+        display: flex;
+        flex-flow: nowrap
     }
 </style>
 

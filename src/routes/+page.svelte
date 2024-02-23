@@ -1,5 +1,6 @@
 <script>
     export let data;
+    import GitIcon from "$lib/assets/github-mark-white.png";
 </script>
 
 <style>
