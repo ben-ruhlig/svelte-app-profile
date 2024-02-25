@@ -3,17 +3,7 @@
     import GitIcon from "$lib/assets/github-mark-white.png";
 </script>
 
-<style>
-    #body-content {
-        display: flex;
-        flex-direction: column;
-        width: var(--page-content-width);
-        padding: 10px 40px;
-    }
-</style>
-
-
-<div id=body-content>
+<div id=profile-content>
     <div id=profile-picture>
         <p>This is where the profile picture belongs</p>
     </div>

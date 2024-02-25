@@ -1,4 +1,4 @@
-<h1>Projects</h1>
+<h1>Blog</h1>
 
 <ul>
     <li>Blog post #1</li>
