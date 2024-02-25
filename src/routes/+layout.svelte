@@ -51,6 +51,11 @@
         display: flex;
         flex-flow: nowrap
     }
+    #body-outline {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
 </style>
 
 <div id=outside>
@@ -83,7 +88,10 @@
         </nav>
     </header>
 
-    <slot />
+    <!-- Middle content section of the website -->
+    <div id=body-outline>
+        <slot />
+    </div>
 
     <!-- Bottom pane of the website -->
     <footer>
