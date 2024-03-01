@@ -1,11 +1,20 @@
 <script>
     export let data;
-    import GitIcon from "$lib/assets/github-mark-white.png";
+    import profilePic from "$lib/assets/linkedin_headshot.jpg";
 </script>
+
+<style>
+    #profile-picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
 
 <div id=profile-content>
     <div id=profile-picture>
-        <p>This is where the profile picture belongs</p>
+        <h1>Hey, I'm { data.firstName } { data.lastName }</h1>
+        <img src={ profilePic } alt="Profile picture"/>
     </div>
     <div>
         <h1>Hey, I'm {data.first_name} {data.last_name}</h1>

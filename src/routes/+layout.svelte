@@ -55,7 +55,6 @@
         display: flex;
         height: 100%;
         flex-direction: column;
-        width: var(--page-content-width);
         padding: 10px 40px;
     }
 </style>
