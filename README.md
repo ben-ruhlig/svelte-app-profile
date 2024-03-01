@@ -2,6 +2,11 @@
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
+## Outstanding Todo List
+
+I need to figure out how to use github actions or this task.
+- Task #1: Fix the issue with the overall page height. Use the other websites as an example. The footer should become visible shortly after scrolling down, but the middle section (body) should continue to scroll downwards.
+
 ## Creating a project
 
 If you're seeing this, you've probably already done this step. Congrats!
