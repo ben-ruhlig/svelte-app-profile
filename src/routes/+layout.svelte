@@ -8,7 +8,7 @@
 
 <style>
     #outside {
-        display:flex;
+        display: flex;
         flex-direction: column;
         height: 100%;
     }
