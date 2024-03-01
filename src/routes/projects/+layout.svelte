@@ -5,6 +5,7 @@
     }
     #projects-ribbon {
         border-bottom: dashed;
+        padding-bottom: 10px;
     }
     #projects-ribbon ul {
         display: flex;
