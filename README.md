@@ -11,6 +11,7 @@ I need to figure out how to use github actions or this task.
 Add some Reactivity
 - Reactivity: Create a drop-down menu from the projects layout to go straight to that particular project. If just to main project is selected, set a default project variable for the slug.
 - Create grey shading on the navigation bar to indicate which page the user is on.
+- Modify the projects/[slug]/+page.server.js to be a regular +page.js file. Solve issue where it gets value correctly at first, but then keeps updating the component and fails eventually. What's the right way to handle this (prbably in the tutorial).
 
 ## Creating a project
 
