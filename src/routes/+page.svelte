@@ -14,7 +14,7 @@
 <div id=profile-content>
     <div id=profile-picture>
         <h1>Hey, I'm { data.firstName } { data.lastName }</h1>
-        <img src={ profilePic } alt="Profile picture"/>
+        <img src={ profilePic } alt="Main Profile"/>
     </div>
     <div id=portfolio-highlights>
         <h2>Projects</h2>
