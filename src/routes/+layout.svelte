@@ -7,79 +7,59 @@
 </script>
 
 <style>
-    header, footer {
-        background-color: black;
+    #flex-outside {
+        font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+        border: solid;
+        height: 100vh;
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: flex-start;
     }
-    footer {
-        background-color: lightgrey;
+    #flex-outside > * {
+        border: dotted;
     }
-    header a, footer a {
-        text-decoration: none;
-        margin: 0 15px;
-        color: white;
-    }
-    footer a {
-        color: black;
-    }
-    nav {
+    #flex-outside > nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 40px;
-        width: var(--page-content-width);
     }
-    #favicon, #copyright {
-        margin-left: 0px;
-    }
-    #right-internal{
+    #flex-outside > nav > div {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 20px;
-        padding-right: 0px;
     }
-    #right-external {
-        display: flex;
-        margin-left: 80px;
-        flex-flow: nowrap
-    }
-    #body-outline {
-        padding: 10px 40px;
+    #flex-outside > #body-outline {
+        flex-grow: 1;
     }
 </style>
 
-<div id=outside>
+<div id=flex-outside>
 
     <!-- Top pane of the website -->
-    <header>
-        <nav id=top>
-            <!-- Left side: Website favicon linking to home page -->
-            <a id=favicon href="/">
-                <img src={ Favicon } alt="Website Favicon" style="width: 50px; height: 50px;">
-            </a>
-            <!-- Right side: internal & external links -->
+    <nav id=top>
+        <!-- Left side: Website favicon linking to home page -->
+        <a id=favicon href="/">
+            <img src={ Favicon } alt="Website Favicon" style="width: 50px; height: 50px;">
+        </a>
+        <!-- Right side: internal & external links -->
+        <div id=right-internal>
+            <!-- Links to internal pages -->
             <div id=right-internal>
-                <!-- Links to internal pages -->
-                <div id=right-internal>
-                    <a href="/">profile</a>
-                    <a href="/projects">projects</a>
-                    <a href="/blog">blog</a>
-                </div>
-                <!-- Links to external sites -->
-                <div id=right-external>
-                    <a href="https://github.com/ben-ruhlig">
-                        <img src={ GitIcon } alt="Github Favicon" style="width: 32px; height: 32px;">
-                    </a>
-                    <a href="https://www.linkedin.com/in/benruhlig/">
-                        <img src={ LinkedinIcon } alt="LinkedIn" style="width: 32px; height: 32px;">
-                    </a>
-                </div>
+                <a href="/">profile</a>
+                <a href="/projects">projects</a>
+                <a href="/blog">blog</a>
             </div>
-        </nav>
-    </header>
+            <!-- Links to external sites -->
+            <div id=right-external>
+                <a href="https://github.com/ben-ruhlig">
+                    <img src={ GitIcon } alt="Github Favicon" style="width: 32px; height: 32px;">
+                </a>
+                <a href="https://www.linkedin.com/in/benruhlig/">
+                    <img src={ LinkedinIcon } alt="LinkedIn" style="width: 32px; height: 32px;">
+                </a>
+            </div>
+        </div>
+    </nav>
 
     <!-- Middle content section of the website -->
     <div id=body-outline>

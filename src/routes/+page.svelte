@@ -3,14 +3,6 @@
     import profilePic from "$lib/assets/linkedin_headshot.jpg";
 </script>
 
-<style>
-    #profile-picture {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-</style>
-
 <div id=profile-content>
     <div id=profile-picture>
         <h1>Hey, I'm { data.firstName } { data.lastName }</h1>
