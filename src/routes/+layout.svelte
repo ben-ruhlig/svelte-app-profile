@@ -7,11 +7,6 @@
 </script>
 
 <style>
-    #outside {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
     header, footer {
         background-color: black;
         display: flex;
@@ -47,14 +42,11 @@
         padding-right: 0px;
     }
     #right-external {
-        margin-left: 80px;
         display: flex;
+        margin-left: 80px;
         flex-flow: nowrap
     }
     #body-outline {
-        display: flex;
-        height: 100%;
-        flex-direction: column;
         padding: 10px 40px;
     }
 </style>
