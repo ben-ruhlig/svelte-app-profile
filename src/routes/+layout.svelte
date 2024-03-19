@@ -9,34 +9,61 @@
 <style>
     #flex-outside {
         font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-        border: solid;
-        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        flex-basis: var(--page-content-width);
     }
-    #flex-outside > * {
-        border: dotted;
-    }
-    #flex-outside > nav {
+    nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 10px 40px;
     }
-    #flex-outside > nav > div {
+    nav div {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
     }
     #flex-outside > #body-outline {
+        display: flex;
+        flex-direction: column;
         flex-grow: 1;
+        padding: 10px 40px;
+    }
+    #header {
+        background-color: black;
+    }
+    #footer {
+        background-color: lightgrey;
+    }
+    #right-external {
+        margin-left: 80px;
+        display: flex;
+        flex-flow: nowrap
+    }
+    #right-internal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        padding-right: 0px;
+    }
+    a {
+        text-decoration: none;
+        margin: 0 15px;
+        color: white;
+    }
+    #footer a {
+        color: black;
     }
 </style>
 
 <div id=flex-outside>
 
     <!-- Top pane of the website -->
-    <nav id=top>
+    <nav id=header>
         <!-- Left side: Website favicon linking to home page -->
         <a id=favicon href="/">
             <img src={ Favicon } alt="Website Favicon" style="width: 50px; height: 50px;">
@@ -67,21 +94,19 @@
     </div>
 
     <!-- Bottom pane of the website -->
-    <footer>
-        <nav id=bottom>
-            <!-- Left side: Website favicon linking to home page -->
-            <a id=copyright href="/">&copy 2024 Benjamin Ruhlig</a>
-            <!-- Right side: internal & external links -->
-            <div class="right">
-                <!-- Links to internal pages -->
-                <div id=right-internal>
-                    <a href="/">profile</a>
-                    <a href="/projects">projects</a>
-                    <a href="/blog">blog</a>
-                </div>
+    <nav id=footer>
+        <!-- Left side: Website favicon linking to home page -->
+        <a id=copyright href="/">&copy 2024 Benjamin Ruhlig</a>
+        <!-- Right side: internal & external links -->
+        <div class="right">
+            <!-- Links to internal pages -->
+            <div id=right-internal>
+                <a href="/">profile</a>
+                <a href="/projects">projects</a>
+                <a href="/blog">blog</a>
             </div>
-        </nav>
-    </footer>
+        </div>
+    </nav>
 
 </div>
 
