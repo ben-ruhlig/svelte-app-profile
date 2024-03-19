@@ -17,7 +17,6 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-
 </style>
 
 <div id="projects-outline">

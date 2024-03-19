@@ -7,87 +7,89 @@
 </script>
 
 <style>
-    #outside {
+    #flex-outside {
+        font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
         display: flex;
         flex-direction: column;
-        height: 100%;
-    }
-    header, footer {
-        background-color: black;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    footer {
-        background-color: lightgrey;
-    }
-    header a, footer a {
-        text-decoration: none;
-        margin: 0 15px;
-        color: white;
-    }
-    footer a {
-        color: black;
+        justify-content: flex-start;
+        flex-basis: var(--page-content-width);
     }
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 40px;
-        width: var(--page-content-width);
     }
-    #favicon, #copyright {
-        margin-left: 0px;
-    }
-    #right-internal{
+    nav div {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 20px;
-        padding-right: 0px;
+
+    }
+    #flex-outside > #body-outline {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 10px 60px;
+    }
+    #header {
+        background-color: black;
+    }
+    #footer {
+        background-color: lightgrey;
     }
     #right-external {
-        margin-left: 80px;
+        padding-left: 40px;
         display: flex;
         flex-flow: nowrap
     }
-    #body-outline {
+    #right-internal {
         display: flex;
-        height: 100%;
-        flex-direction: column;
-        padding: 10px 40px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px;
+        padding-right: 0px;
+    }
+    a {
+        text-decoration: none;
+        padding: 0 15px;
+        color: white;
+    }
+    #right-external a {
+        padding: 0 0 0 30px;
+    }
+    #footer a {
+        color: black;
     }
 </style>
 
-<div id=outside>
+<div id=flex-outside>
 
     <!-- Top pane of the website -->
-    <header>
-        <nav id=top>
-            <!-- Left side: Website favicon linking to home page -->
-            <a id=favicon href="/">
-                <img src={ Favicon } alt="Website Favicon" style="width: 50px; height: 50px;">
-            </a>
-            <!-- Right side: internal & external links -->
+    <nav id=header>
+        <!-- Left side: Website favicon linking to home page -->
+        <a id=favicon href="/">
+            <img src={ Favicon } alt="Website Favicon" style="width: 50px; height: 50px;">
+        </a>
+        <!-- Right side: internal & external links -->
+        <div id=right-internal>
+            <!-- Links to internal pages -->
             <div id=right-internal>
-                <!-- Links to internal pages -->
-                <div id=right-internal>
-                    <a href="/">profile</a>
-                    <a href="/projects">projects</a>
-                    <a href="/blog">blog</a>
-                </div>
-                <!-- Links to external sites -->
-                <div id=right-external>
-                    <a href="https://github.com/ben-ruhlig">
-                        <img src={ GitIcon } alt="Github Favicon" style="width: 32px; height: 32px;">
-                    </a>
-                    <a href="https://www.linkedin.com/in/benruhlig/">
-                        <img src={ LinkedinIcon } alt="LinkedIn" style="width: 32px; height: 32px;">
-                    </a>
-                </div>
+                <a href="/">profile</a>
+                <a href="/projects">projects</a>
+                <a href="/blog">blog</a>
             </div>
-        </nav>
-    </header>
+            <!-- Links to external sites -->
+            <div id=right-external>
+                <a href="https://github.com/ben-ruhlig">
+                    <img src={ GitIcon } alt="Github Favicon" style="width: 32px; height: 32px;">
+                </a>
+                <a href="https://www.linkedin.com/in/benruhlig/">
+                    <img src={ LinkedinIcon } alt="LinkedIn" style="width: 32px; height: 32px;">
+                </a>
+            </div>
+        </div>
+    </nav>
 
     <!-- Middle content section of the website -->
     <div id=body-outline>
@@ -95,21 +97,19 @@
     </div>
 
     <!-- Bottom pane of the website -->
-    <footer>
-        <nav id=bottom>
-            <!-- Left side: Website favicon linking to home page -->
-            <a id=copyright href="/">&copy 2024 Benjamin Ruhlig</a>
-            <!-- Right side: internal & external links -->
-            <div class="right">
-                <!-- Links to internal pages -->
-                <div id=right-internal>
-                    <a href="/">profile</a>
-                    <a href="/projects">projects</a>
-                    <a href="/blog">blog</a>
-                </div>
+    <nav id=footer>
+        <!-- Left side: Website favicon linking to home page -->
+        <a id=copyright href="/">&copy 2024 Benjamin Ruhlig</a>
+        <!-- Right side: internal & external links -->
+        <div class="right">
+            <!-- Links to internal pages -->
+            <div id=right-internal>
+                <a href="/">profile</a>
+                <a href="/projects">projects</a>
+                <a href="/blog">blog</a>
             </div>
-        </nav>
-    </footer>
+        </div>
+    </nav>
 
 </div>
 
