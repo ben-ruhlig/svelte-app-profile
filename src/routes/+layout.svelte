@@ -30,7 +30,7 @@
         display: flex;
         flex-direction: column;
         flex-grow: 1;
-        padding: 10px 40px;
+        padding: 10px 60px;
     }
     #header {
         background-color: black;
@@ -39,7 +39,7 @@
         background-color: lightgrey;
     }
     #right-external {
-        margin-left: 80px;
+        padding-left: 40px;
         display: flex;
         flex-flow: nowrap
     }
@@ -47,13 +47,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 20px;
+        padding: 10px 0px;
         padding-right: 0px;
     }
     a {
         text-decoration: none;
-        margin: 0 15px;
+        padding: 0 15px;
         color: white;
+    }
+    #right-external a {
+        padding: 0 0 0 30px;
     }
     #footer a {
         color: black;
