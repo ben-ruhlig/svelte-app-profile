@@ -3,7 +3,6 @@ import { error } from '@sveltejs/kit';
 import fetch from 'node-fetch';
 
 export async function load({ params }) {
-    console.log(params.slug);
     if (params.slug === params.slug) {
         if (params.slug === 'trivia') {
             return {
