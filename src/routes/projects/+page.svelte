@@ -1,2 +1,2 @@
-<p>Select a project from the top panel</p>
+<p>Select a project above</p>
 
