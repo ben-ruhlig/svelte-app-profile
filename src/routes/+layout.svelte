@@ -75,7 +75,7 @@
             <!-- Links to internal pages -->
             <div id=right-internal>
                 <a href="/">profile</a>
-                <a href="/projects">projects</a>
+                <a href="/games">games</a>
                 <a href="/blog">blog</a>
             </div>
             <!-- Links to external sites -->
@@ -104,7 +104,7 @@
             <!-- Links to internal pages -->
             <div id=right-internal>
                 <a href="/">profile</a>
-                <a href="/projects">projects</a>
+                <a href="/games">games</a>
                 <a href="/blog">blog</a>
             </div>
         </div>

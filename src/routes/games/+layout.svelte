@@ -1,40 +1,40 @@
 <style>
-    #projects-outline {
+    #games-outline {
         display: flex;
         flex-direction: column;
     }
-    #projects-ribbon {
+    #games-ribbon {
         border-bottom: dashed;
         padding-bottom: 10px;
     }
-    #projects-ribbon ul {
+    #games-ribbon ul {
         display: flex;
         justify-content: center;
         padding-left: 0px;
         list-style: none;
     }
-    #projects-ribbon ul li {
+    #games-ribbon ul li {
         padding-left: 20px;
         padding-right: 20px;
     }
 </style>
 
-<div id="projects-outline">
-    <div id="projects-ribbon">
+<div id="games-outline">
+    <div id="games-ribbon">
         <ul>
             <li>
-                <a href="/projects/project1">Project #1</a>
+                <a href="/games/trivia">trivia</a>
             </li>
             <li>
-                <a href="/projects/project2">Project #2</a>
+                <a href="/games/game2">game #2</a>
             </li>
             <li>
-                <a href="/projects/project3">Project #3</a>
+                <a href="/games/game3">game #3</a>
             </li>
         </ul>
     </div>
 
-    <div id="projects-conent">
+    <div id="games-conent">
         <slot/>
     </div>
 </div>

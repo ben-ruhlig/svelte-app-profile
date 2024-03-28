@@ -7,4 +7,5 @@
 <h1>{data.title}</h1>
 <div>
     {@html data.content}
+    {@html data.apiResponse}
 </div>

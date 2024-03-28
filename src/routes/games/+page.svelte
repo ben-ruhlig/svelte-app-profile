@@ -3,9 +3,9 @@
     import { onMount } from 'svelte';
     import { goto } from '$app/navigation';
     
-    let default_page = 'project1';
+    let default_page = 'trivia';
 
     onMount(() => {
-        goto('/projects/'.concat(default_page));
+        goto('/games/'.concat(default_page));
     });
 </script>

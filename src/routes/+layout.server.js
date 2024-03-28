@@ -1,4 +1,4 @@
-import { profile } from './profile-data.js';
+import { profile } from '$lib/data.js';
 
 export function load() {
     return profile;
