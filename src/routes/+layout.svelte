@@ -10,9 +10,9 @@
     #flex-outside {
         font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
         display: flex;
+        flex: 1;
         flex-direction: column;
         justify-content: flex-start;
-        flex-basis: var(--page-content-width);
     }
     nav {
         display: flex;
@@ -24,12 +24,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
     }
     #flex-outside > #body-outline {
         display: flex;
         flex-direction: column;
-        flex-grow: 1;
+        flex: 1;
         padding: 10px 60px;
     }
     #header {
